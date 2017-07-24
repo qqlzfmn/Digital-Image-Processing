@@ -1,0 +1,17 @@
+ %%%%%%%%1.4  3*3中值滤波%%%%%%%%
+
+I = imread('cameraman.tif');
+figure,imshow(I);
+J=medfilt2(I,[5,5]);
+figure,imshow(J);
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%1.5 图像的缩放%%%%%%%%%%%%%%%%%%%%%%%%%
+
+I = imread('cameraman.tif');
+figure,imshow(I);
+scale = 0.5;
+J = imresize(I,scale);
+figure,imshow(J);
